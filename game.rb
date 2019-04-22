@@ -9,11 +9,10 @@ class Game
     end
 
     def play
-        puts ''
-        puts "Player 1: #{@p1.lives} lives | Player 2: #{@p2.lives} lives"
-
         active_player = @p1
         while(!end_game)
+            puts ''
+            puts "Player 1: #{@p1.life * @p1.lives}  | Player 2: #{@p2.life * @p2.lives}"
             puts ''
             puts "--------#{active_player.name}'s Turn---------"
             puts ''
@@ -29,11 +28,11 @@ class Game
         if @p1.lives == 0  
             puts ''
             puts 'Player 1 has died.'
-            puts 'Game over! Player 2 Wins!'
+            puts 'Game over! Player 2 wins!'
         else 
             puts ''
             puts 'Player 2 has died.'
-            puts 'Game over! Player 1 Wins!'
+            puts 'Game over! Player 1 wins!'
         end
     end
 
