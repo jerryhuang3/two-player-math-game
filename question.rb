@@ -19,8 +19,8 @@ attr_reader :active_player, :first_num, :second_num, :answer
     end
 
     def num_gen
-        @first_num = Random.new.rand(5000)
-        @second_num = Random.new.rand(5000)
+        @first_num = Random.new.rand(9999)
+        @second_num = Random.new.rand(9999)
         @answer = first_num + second_num
     end
 
